@@ -1,8 +1,8 @@
 <?php
 /**
-* Plugin Name: Mastadon Timeline
+* Plugin Name: Mastodon Timeline
 * Plugin URI: https://hupfeld-software.de/plugins/mastadon-timeline/#!README.md
-* Description: Plugin zur Darstellung der Mastadon Timeline
+* Description: Plugin zur Darstellung der Mastodon Timeline
 * Version: 0.01
 * Author: Walter Hupfeld
 * Datum: 17.11.2022
@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 
 require("mas-body.php");
 
-add_action('wp_enqueue_scripts','mas_style_and_script');  // add custom style and script
+add_action('wp_enqueue_scripts','mas_style_and_script');
 function mas_style_and_script()
 {
     // css
