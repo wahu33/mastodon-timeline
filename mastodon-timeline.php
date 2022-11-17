@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 
 require("mas-body.php");
 
-add_action('mas_enqueue_scripts','mas_style_and_script');  // add custom style and script
+add_action('wp_enqueue_scripts','mas_style_and_script');  // add custom style and script
 function mas_style_and_script()
 {
     // css
@@ -30,6 +30,6 @@ add_shortcode( 'mastodon-timeline', 'mastodon_timeline' );
 function mastodon_timeline( $atts, $content = null) {
     wp_enqueue_style("mas-style");
     wp_enqueue_script("mas-script");
-    $strBody = mas_body();
+    $strBody = mas_body($atts);
     return $strBody;
 }
