@@ -1,18 +1,7 @@
 // Mastodon embed timeline
 // Forked from: https://github.com/AzetJP/mastodon-timeline-widget
 
-// Account settings
-document.addEventListener("DOMContentLoaded", () => {
-	let mapi = new MastodonApi({
-		container_id: 'mt-timeline',
-		container_body_id: 'mt-body',
-		instance_uri: 'https://nrw.social',
-		user_id: '109245751255389357',
-		profile_name: '@radwegehamm',
-		toots_limit: 6,
-		btn_see_more: 'Mehr auf Mastodon'
-	});
-});
+
 
 let MastodonApi = function (params_) {
 

@@ -2,10 +2,10 @@
 /**
 * Plugin Name: Mastodon Timeline
 * Plugin URI: https://hupfeld-software.de/plugins/mastadon-timeline/#!README.md
-* Description: Plugin zur Darstellung der Mastodon Timeline
-* Version: 0.01
+* Description: Plugin zur Darstellung der Mastodon Timeline (benutzt )
+* Version: 0.02
 * Author: Walter Hupfeld
-* Datum: 17.11.2022
+* Datum: 19.11.2022
 * Author URI: http://www.hupfeld-software.de
 */
 
