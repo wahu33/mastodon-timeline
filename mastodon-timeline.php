@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Mastodon Timeline
 * Plugin URI: https://hupfeld-software.de/plugins/mastadon-timeline/#!README.md
-* Description: Plugin zur Darstellung der Mastodon Timeline (benutzt )
+* Description: Plugin zur Darstellung der Mastodon Timeline (benutzt https://gitlab.com/idotj/mastodon-embed-feed-timeline)
 * Version: 0.02
 * Author: Walter Hupfeld
 * Datum: 19.11.2022
@@ -27,15 +27,15 @@ function mas_style_and_script()
 add_shortcode( 'mastodon-timeline', 'mastodon_timeline' );
 
 // Monatsnavigation
-function mastodon_timeline() {
-    $atts = array();
-    $atts['instance_uri'] = 'https://nrw.social';
-    $atts['user_id'] = '109245751255389357';
-    $atts['profile_name'] = '@radwegehamm';
-    $atts['toots_limit'] = '6';
+function mastodon_timeline($atts,$content=null) {
+    $param = array();
+    $param['instance_uri'] = 'https://nrw.social';
+    $param['user_id'] = '109245751255389357';
+    $param['profile_name'] = '@radwegehamm';
+    $param['toots_limit'] = '6';
 
     wp_enqueue_style("mas-style");
     wp_enqueue_script("mas-script");
-    $strBody = mas_body($atts);
+    $strBody = mas_body($param);
     return $strBody;
 }
