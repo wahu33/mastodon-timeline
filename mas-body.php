@@ -1,25 +1,31 @@
 <?php
 
 
-function mas_body($atts=null) {
+function mas_body($atts) {
+
+	$instance_uri = (!empty($atts['instance_uri'])) ? $atts['instance_uri'] : "";
+	$user_id = (!empty($atts['user_id'])) ? $atts['user_id'] : "";
+	$profile_name = (!empty($atts['profile_name'])) ? $atts['profile_name'] : "";
+	$toots_limit = (!empty($atts['toots_limit'])) ? $atts['toots_limit'] : "";
+
     return "
 	<script>
-		// Account settings
+	// Account settings
 	document.addEventListener(\"DOMContentLoaded\", () => {
 		let mapi = new MastodonApi({
 			container_id: 'mt-timeline',
 			container_body_id: 'mt-body',
-			instance_uri: 'https://nrw.social',
-			user_id: '109245751255389357',
-			profile_name: '@radwegehamm',
-			toots_limit: 6,
+			instance_uri: '".$instance_uri."',
+			user_id: '".$user_id."',
+			profile_name: '".$profile_name."',
+			toots_limit: ".$toots_limit.",
 			btn_see_more: 'Mehr auf Mastodon'
 		});
 	});
    </script>
 
    <style>
-   @media only screen and (max-width: 400px) {
+   @media only screen and (max-width: 40rem) {
    	  .mt-toot {padding: 5rem 0 2rem 0;}
    }
    </style>

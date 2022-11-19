@@ -27,7 +27,13 @@ function mas_style_and_script()
 add_shortcode( 'mastodon-timeline', 'mastodon_timeline' );
 
 // Monatsnavigation
-function mastodon_timeline( $atts, $content = null) {
+function mastodon_timeline() {
+    $atts = array();
+    $atts['instance_uri'] = 'https://nrw.social';
+    $atts['user_id'] = '109245751255389357';
+    $atts['profile_name'] = '@radwegehamm';
+    $atts['toots_limit'] = '6';
+
     wp_enqueue_style("mas-style");
     wp_enqueue_script("mas-script");
     $strBody = mas_body($atts);
