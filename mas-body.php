@@ -24,12 +24,6 @@ function mas_body($atts) {
 	});
    </script>
 
-   <style>
-   @media screen and (max-width: 40rem) {
-   	  .mt-toot {padding: 5rem 0 2rem 0 !important;}
-   }
-   </style>
-
 	<div class=\"dummy-container\">
 		<div id=\"mt-timeline\" class=\"mt-timeline\">
 			<div id=\"mt-body\" class=\"mt-body\">
