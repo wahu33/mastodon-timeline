@@ -19,9 +19,10 @@ add_action('wp_enqueue_scripts','mas_style_and_script');
 function mas_style_and_script()
 {
     // css
-    wp_register_style( 'mas-style', plugins_url('mastodon-timeline.css', __FILE__) ); 
+    wp_register_style( 'mas-style', plugins_url('css/mastodon-timeline.css', __FILE__) ); 
+    wp_register_style( 'style', plugins_url('css/style.css', __FILE__) ); 
     // js
-    wp_register_script( 'mas-script', plugins_url('mastodon-timeline.js', __FILE__), array('jquery') );  
+    wp_register_script( 'mas-script', plugins_url('js/mastodon-timeline.js', __FILE__), array('jquery') );  
 }
 
 add_shortcode( 'mastodon-timeline', 'mastodon_timeline' );
@@ -35,6 +36,7 @@ function mastodon_timeline($atts,$content=null) {
     $param['toots_limit'] = '6';
 
     wp_enqueue_style("mas-style");
+    wp_enqueue_style("style");   
     wp_enqueue_script("mas-script");
     $strBody = mas_body($param);
     return $strBody;
