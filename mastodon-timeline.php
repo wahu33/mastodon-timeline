@@ -3,7 +3,7 @@
 * Plugin Name: Mastodon Timeline
 * Plugin URI: https://hupfeld-software.de/plugins/mastadon-timeline/#!README.md
 * Description: Plugin zur Darstellung der Mastodon Timeline (benutzt https://gitlab.com/idotj/mastodon-embed-feed-timeline)
-* Version: 0.03
+* Version: 0.04
 * Author: Walter Hupfeld
 * Datum: 21.11.2022
 * Author URI: http://www.hupfeld-software.de

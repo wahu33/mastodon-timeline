@@ -8,16 +8,14 @@
 
 Folgende Paramter müssen in den Einstellungen festgelegt werden
 
-URI:    deine Mastodon-Instanz  (https://nrw.social)  
-User ID:  - wie bekomme ich die User-ID  
-Limit: Anzahl der angezeigten Tröts  
+
+__URI:__    deine Mastodon-Instanz  (https://nrw.social)  
+__User ID:__  - wie bekomme ich die User-ID  
+__User Name:__ 
+__Limit:__ Anzahl der angezeigten Tröts  
 See more: Text für die Anzeige z.B "Mehr auf Mostodon"  
 
-    instance_uri: 'https://nrw.social',
-    user_id: '109245751255389357',
-    profile_name: '@radwegehamm',
-    toots_limit: 6,
-    btn_see_more: 'Mehr auf Mastodon'
+Link zum Auslesen der ID: https://prouser123.me/mastodon-userid-lookup/
 
 
 

@@ -23,7 +23,7 @@ function mas_body($atts) {
 	console.log(clientWidth);
 	if (clientWidth<400) {
 		var div = document.getElementById('style');
-		div.innerHTML += '<style>.mt-toot {padding:5rem 0 2rem 0}</style>';
+		div.innerHTML += '<style>.mt-toot {padding:5rem 0 2rem 0 !important}</style>';
 	}
 	// Account settings
 	document.addEventListener(\"DOMContentLoaded\", () => {
