@@ -1,6 +1,5 @@
 <?php
 
-
 function mas_body($atts) {
 
 	$instance_uri = (!empty($atts['instance_uri'])) ? $atts['instance_uri'] : "";
