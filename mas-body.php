@@ -9,7 +9,21 @@ function mas_body($atts) {
 	$toots_limit = (!empty($atts['toots_limit'])) ? $atts['toots_limit'] : "";
 
     return "
+	<div id='style'></div>
+	<div class=\"dummy-container\">
+		<div id=\"mt-timeline\" class=\"mt-timeline\">
+			<div id=\"mt-body\" class=\"mt-body\">
+				<div class=\"loading-spinner\"></div>
+			</div>
+		</div>
+	</div> 
+
 	<script>
+	var clientWidth = document.getElementById('mt-timeline').clientWidth;
+	if (clientWidth<350) {
+		var div = document.getElementById('style');
+		div.innerHTML += '<style>.mt-toot {padding:7rem 0 2rem 0}</style>';
+	}
 	// Account settings
 	document.addEventListener(\"DOMContentLoaded\", () => {
 		let mapi = new MastodonApi({
@@ -22,14 +36,6 @@ function mas_body($atts) {
 			btn_see_more: 'Mehr auf Mastodon'
 		});
 	});
-   </script>
-
-	<div class=\"dummy-container\">
-		<div id=\"mt-timeline\" class=\"mt-timeline\">
-			<div id=\"mt-body\" class=\"mt-body\">
-				<div class=\"loading-spinner\"></div>
-			</div>
-		</div>
-	</div>   
+</script>  
     ";
 }
