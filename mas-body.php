@@ -19,10 +19,11 @@ function mas_body($atts) {
 	</div> 
 
 	<script>
-	var clientWidth = document.getElementById('mt-timeline').clientWidth;
-	if (clientWidth<350) {
+	var clientWidth = document.getElementById('mt-body').clientWidth;
+	console.log(clientWidth);
+	if (clientWidth<400) {
 		var div = document.getElementById('style');
-		div.innerHTML += '<style>.mt-toot {padding:7rem 0 2rem 0}</style>';
+		div.innerHTML += '<style>.mt-toot {padding:5rem 0 2rem 0}</style>';
 	}
 	// Account settings
 	document.addEventListener(\"DOMContentLoaded\", () => {
