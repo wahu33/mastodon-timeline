@@ -1,6 +1,8 @@
 # Mastodon-Timeline
 
-Wordpress-Plugin zur Darstellung der Mastoton-Timeline
+Wordpress-Plugin zur Darstellung der Mastoton-Timeline  
+Erweiterung von https://gitlab.com/idotj/mastodon-embed-feed-timeline
+
 
 ## Shortcode
 
