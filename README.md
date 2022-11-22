@@ -1,6 +1,6 @@
 # Mastodon-Timeline
 
-Wordpress-Plugin zur Darstellung der Mastoton-Timeline  
+Wordpress-Plugin zur Darstellung der Mastodon-Timeline  
 Erweiterung von https://gitlab.com/idotj/mastodon-embed-feed-timeline
 
 
@@ -13,7 +13,7 @@ Erweiterung von https://gitlab.com/idotj/mastodon-embed-feed-timeline
 Folgende Paramter müssen in den Einstellungen festgelegt werden
 
 __URI:__    deine Mastodon-Instanz  (https://nrw.social)  
-__User ID:__  - wie bekomme ich die User-ID  
+__User ID:__  s.u.
 __User Name:__  
 __Limit:__ Anzahl der angezeigten Tröts  
 See more: Text für die Anzeige z.B "Mehr auf Mostodon"  
